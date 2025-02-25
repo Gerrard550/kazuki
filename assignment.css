@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: darkcyan;
+  font-size: 1.5rem;
+}
+
+body {
+  background-color: crimson;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.logo a {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+  margin: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navdiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+li a {
+  color: white;
+}
