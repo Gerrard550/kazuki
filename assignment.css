@@ -5,19 +5,22 @@
 }
 
 .navbar {
-  background-color: darkcyan;
+  background-color: rgb(35, 125, 125);
   font-size: 1.5rem;
 }
 
 body {
-  background-color: crimson;
+  background-color: rgb(236, 214, 186);
   font-family: "Times New Roman", Times, serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
 }
 
 .logo a {
   font-size: 40px;
   font-weight: 700;
-  color: white;
+  color: rgb(20, 220, 143);
   margin: 10px;
   text-transform: uppercase;
   text-decoration: none;
@@ -25,8 +28,8 @@ body {
 
 .navdiv {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
 }
 
 li {
@@ -36,4 +39,13 @@ li {
 
 li a {
   color: white;
+  text-decoration: none;
+  margin: 10px;
+}
+
+footer {
+  font-size: 20px;
+  text-align: center;
+  background-color: green;
+  margin-top: auto;
 }
