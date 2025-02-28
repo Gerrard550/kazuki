@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.logo a {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.79);
+}
+
+.logo-icon {
+  font-size: 30px;
+  color: #29882a;
+}
+
+li {
+  font-size: 18px;
+  font-weight: 200;
+  list-style: none;
+  display: inline-block;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.register {
+  background-color: #29882a;
+  padding: 10px;
+}
+
+.register a {
+  text-decoration: none;
+  color: white;
+}
+
+/* LESSON SECTION  */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 80px 135px;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.simp {
+  color: #29882a;
+}
