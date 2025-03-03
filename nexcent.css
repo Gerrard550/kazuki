@@ -4,6 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-green: #29882a;
+  --black1: rgba(0, 0, 0, 0.79);
+  --black2: rgb(55, 54, 54);
+  --gray: gray;
+  --gray2: rgb(241, 243, 244);
+  --white: white;
+  --white2: #bfd2bf;
+  --h1-size: 50px;
+  --h1-height: 60px;
+  --p-size: 12px;
+  --p-height: 26px;
+}
 body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   display: flex;
@@ -22,17 +35,17 @@ body {
   font-size: 30px;
   font-weight: 700;
   text-decoration: none;
-  color: rgba(0, 0, 0, 0.79);
+  color: var(--black1);
 }
 
 .logo-icon {
   font-size: 30px;
-  color: #29882a;
+  color: var(--main-green);
 }
 
 li {
   font-size: 18px;
-  font-weight: 200;
+  font-weight: 500;
   list-style: none;
   display: inline-block;
   padding: 20px;
@@ -40,7 +53,7 @@ li {
 }
 
 .register {
-  background-color: #29882a;
+  background-color: var(--main-green);
   padding: 10px;
 }
 
@@ -53,8 +66,8 @@ li {
 
 .section1 {
   width: 95%;
-  height: 50dvh;
-  background-color: rgb(241, 243, 244);
+  height: 70dvh;
+  background-color: var(--gray2);
   border-radius: 0 12px 12px 0;
 }
 .container {
@@ -64,20 +77,22 @@ li {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: var(--h1-size);
+  height: var(--h1-height);
+  color: var(--black1);
 }
 
 .simp {
-  color: #29882a;
+  color: var(--main-green);
 }
 
 .word {
-  font-size: 12px;
+  font-size: var(--p-size);
   margin: 10px 0;
 }
 
 .btn {
-  background-color: #29882a;
+  background-color: var(--main-green);
   padding: 10px 20px;
   margin: 15px 0;
   display: block;
@@ -87,16 +102,16 @@ h1 {
 }
 
 .dot {
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
-  color: #29882a;
+  color: var(--main-green);
   position: absolute;
   bottom: 10px;
   right: 600px;
 }
 
 .dots {
-  color: #bfd2bf;
+  color: var(--white2);
 }
 
 /* CLIENT SECTION */
@@ -107,7 +122,9 @@ h1 {
 }
 
 h2 {
-  color: rgb(83, 82, 82);
+  text-align: center;
+  color: var(--gray);
+  margin: 20px 430px;
 }
 
 ul {
@@ -116,21 +133,48 @@ ul {
   justify-content: space-around;
 }
 
-h2 ~ p {
-  color: rgb(101, 100, 100);
+p {
+  font-size: var(--p-size);
 }
 
 .position {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 40px 40px 80px;
 }
 
 .card {
-  display: grid;
-  grid-template-columns: repeat(1, 3fr);
+  background-color: var(--white);
+  padding: 10px;
+  margin: 12px;
+  border-radius: 12px;
+  border: 1px solid var(--gray3);
 }
 
 .member-icon {
   text-align: center;
+}
+
+h3 {
+  color: var(--gray);
+  text-align: center;
+  margin: 10px 120px;
+}
+
+h3 ~ p {
+  font-size: var(--p-size);
+  padding: 10px 80px 40px 80px;
+}
+
+/* SPENDING SECTION */
+
+.spending {
+  display: flex;
+  margin: 5px 200px;
+  padding: 0 20px 0 80px;
+}
+
+.unseen {
+  margin: 0 100px;
 }
