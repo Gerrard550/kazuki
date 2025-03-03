@@ -178,3 +178,17 @@ h3 ~ p {
 .unseen {
   margin: 0 100px;
 }
+
+.local {
+  width: 255px;
+  margin: 20px 40px 10px 80px;
+}
+
+.dedication {
+  display: flex;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
