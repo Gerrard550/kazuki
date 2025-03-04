@@ -191,4 +191,75 @@ h3 ~ p {
 .items {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin: 0 300px;
+}
+
+.group {
+  color: var(--main-green);
+}
+
+img {
+  border-radius: 12px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-areas:
+    "img word word"
+    "img smith smith"
+    "img custom custom"; */
+  padding: 20px 120px;
+  background-color: var(--gray2);
+  width: 95%;
+  height: 50dvh;
+}
+
+.right-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.smith {
+  color: var(--main-green);
+}
+
+.meet {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--main-green);
+  width: 250px;
+}
+
+/* MARKETING SECTION  */
+
+.care {
+  padding: 5px 300px;
+}
+
+.browse {
+  display: flex;
+  justify-content: center;
+}
+
+.browse img {
+  margin: 0 10px;
+}
+
+.special-card {
+  width: 180px;
+  height: 150px;
+  background-color: red;
+  padding: 20px 20px;
+  position: absolute;
+  border-radius: 12px;
+  position: absolute;
+  top: 2200px;
+  margin: 0 48px;
+}
+
+.read {
+  font-size: 15px;
+  margin-top: 24px;
+  text-align: center;
+  color: var(--main-green);
 }
