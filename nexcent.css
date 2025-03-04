@@ -263,3 +263,8 @@ img {
   text-align: center;
   color: var(--main-green);
 }
+
+.libero {
+  text-align: center;
+  padding: 10px 500px;
+}
