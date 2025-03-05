@@ -10,6 +10,7 @@
   --black2: rgb(55, 54, 54);
   --gray: gray;
   --gray2: rgb(241, 243, 244);
+  --gray3: rgb(248, 245, 245);
   --white: white;
   --white2: #bfd2bf;
   --h1-size: 50px;
@@ -266,5 +267,50 @@ img {
 
 .libero {
   text-align: center;
-  padding: 10px 500px;
+  padding: 10px 300px;
+  color: var(--black2);
+}
+
+.btn1 {
+  font-family: var(--p-size);
+  background-color: var(--main-green);
+  padding: 10px 20px;
+  margin: 85px 500px;
+  display: inline;
+  border-radius: 4px;
+  color: var(--white);
+  border-style: none;
+  cursor: pointer;
+}
+
+.under {
+  background-color: var(--gray2);
+  width: 95%;
+  height: 35dvh;
+}
+
+/* FOOTER SECTION */
+
+.social {
+  display: block;
+}
+
+.logos {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--black1);
+  margin: 40px 20px;
+}
+
+.logos a {
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--black1);
+  margin: 40px 0px;
+}
+
+.copy {
+  margin: 30px 0 5px 0;
 }
