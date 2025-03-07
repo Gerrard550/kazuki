@@ -41,14 +41,25 @@ console.log(BMIMark > BMIJohn);
 
 // SOLUTION
 
-const scoreDolphins = (96 + 108 + 89 + 22) / 4;
-const scoreKoalas = (88 + 91 + 110 + 150) / 4;
-console.log(scoreDolphins, scoreKoalas);
+// const scoreDolphins = (96 + 108 + 89 + 22) / 4;
+// const scoreKoalas = (88 + 91 + 110 + 150) / 4;
+// console.log(scoreDolphins, scoreKoalas);
 
-if (scoreDolphins > scoreKoalas) {
-  console.log("Dolphin wins");
-} else if (scoreDolphins < scoreKoalas) {
-  console.log("Koalas wins");
-} else {
-  console.log("Both wins the trophy🏆");
+// if (scoreDolphins > scoreKoalas) {
+//   console.log("Dolphin wins");
+// } else if (scoreDolphins < scoreKoalas) {
+//   console.log("Koalas wins");
+// } else {
+//   console.log("Both wins the trophy🏆");
+// }
+
+function multiply(a, b, c) {
+  return a * b * c;
 }
+console.log(multiply(2, 3, 4));
+console.log(multiply(-3, -4, -5));
+
+function tripple(a) {
+  return a * 3;
+}
+console.log(tripple(5));
