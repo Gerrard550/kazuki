@@ -41,8 +41,8 @@ console.log(BMIMark > BMIJohn);
 
 // SOLUTION
 
-const scoreDolphins = (96 + 108 + 89) / 3;
-const scoreKoalas = (88 + 91 + 110) / 3;
+const scoreDolphins = (96 + 108 + 89 + 22) / 4;
+const scoreKoalas = (88 + 91 + 110 + 150) / 4;
 console.log(scoreDolphins, scoreKoalas);
 
 if (scoreDolphins > scoreKoalas) {
