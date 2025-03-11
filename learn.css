@@ -16,3 +16,19 @@
 .del {
   color: green;
 }
+
+.love {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  background-color: tomato;
+  border-radius: 50%;
+  border: 10px solid green;
+}
+p {
+  color: white;
+  font-style: italic;
+  font-weight: 700;
+}
