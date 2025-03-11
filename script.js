@@ -62,9 +62,3 @@ console.log(multiply(-3, -4, -5));
 function tripple(a) {
   return a * 3;
 }
-console.log(tripple(5));
-
-const multiplyArrow = (a, b, c) => {
-  return a * b * c;
-};
-console.log(multiplyArrow(3, 5, 10));
