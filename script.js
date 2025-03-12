@@ -139,3 +139,9 @@ for (let x = 1; x <= 10; x++) {
   multiply = multiply * x;
 }
 console.log(multiply);
+
+let substract = 1;
+for (let y = 1; y <= 5; y++) {
+  substract = substract - y;
+}
+console.log(substract);
