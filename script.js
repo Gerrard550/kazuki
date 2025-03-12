@@ -53,12 +53,89 @@ console.log(BMIMark > BMIJohn);
 //   console.log("Both wins the trophy🏆");
 // }
 
-function multiply(a, b, c) {
-  return a * b * c;
-}
-console.log(multiply(2, 3, 4));
-console.log(multiply(-3, -4, -5));
+// function multiply(a, b, c) {
+//   return a * b * c;
+// }
+// console.log(multiply(2, 3, 4));
+// console.log(multiply(-3, -4, -5));
 
-function tripple(a) {
-  return a * 3;
+// function tripple(a) {
+//   return a * 3;
+// }
+// console.log(tripple(5));
+
+// const multiplyArrow = (a, b, c) => {
+//   return a * b * c;
+// };
+// console.log(multiplyArrow(3, 5, 10));
+
+// const day = "";
+
+// switch (day) {
+//   case "monday":
+//     console.log("go to Lagos");
+//     console.log("go to Ibadan");
+//     break;
+//   case "tuedsay":
+//     console.log("go to ikorodu");
+//     break;
+//   case "wednesday":
+//     console.log("go to owerri");
+//     break;
+//   case "thursday":
+//     console.log("go to kano");
+//     break;
+//   case "friday":
+//     console.log("go to ife");
+//   case "saturday":
+//   case "sunday":
+//     console.log("stay @ home");
+//     break;
+//   default:
+//     console.log("illegal movement");
+// }
+
+// if (day === "monday") {
+//   console.log("go to Lagos");
+//   console.log("go to Ibadan");
+// } else if (day === "tuesday") {
+//   console.log("go to ikorodu");
+// } else if (day === "wednesday") {
+//   console.log("go to owerri");
+// } else if (day === "thursday") {
+//   console.log("go to kano");
+// } else if (day === "friday") {
+//   console.log("go to ife");
+// } else if (day === "saturday" || day === "sunday") {
+//   console.log("stay @ home");
+// } else {
+//   console.log("illegal movement");
+// }
+
+// const number = [3, 6, 8, 12, 15];
+// const halfNumber = number.map((t) => t * 0.5);
+// console.log(halfNumber);
+
+// const doubleNumber = number.map((t) => t * 2);
+// console.log(doubleNumber);
+
+// console.log(number[7]);
+
+// 1. Print number 1 to 10
+// 2. Multiply array by 10
+// 3. Sum numbers from 1 to 5
+
+for (let a = 1; a <= 10; a++) {
+  console.log(a);
 }
+
+const newNumbers = [2, 4, 6, 8, 10, 11, 12, 16, 30];
+for (let x = 0; x < newNumbers.length; x++) {
+  console.log(newNumbers[x] * 10);
+}
+
+let multiply = 1;
+for (let x = 1; x <= 10; x++) {
+  multiply = multiply * x;
+}
+console.log(multiply);

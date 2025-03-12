@@ -21,14 +21,27 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80px;
-  height: 80px;
-  background-color: tomato;
+  width: 120px;
+  height: 120px;
+  background-image: linear-gradient(
+    rgb(216, 111, 111),
+    rgb(145, 84, 94),
+    tomato
+  );
   border-radius: 50%;
   border: 10px solid green;
 }
 p {
   color: white;
+  text-transform: capitalize;
   font-style: italic;
   font-weight: 700;
+}
+
+.hate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 60px;
 }
