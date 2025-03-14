@@ -140,8 +140,18 @@ for (let x = 1; x <= 10; x++) {
 }
 console.log(multiply);
 
-let substract = 1;
-for (let y = 1; y <= 5; y++) {
-  substract = substract - y;
-}
-console.log(substract);
+  if (!userGuess) {
+    document.querySelector(".message").innerHTML =
+      "Input a valid number in the box";
+  } else if (userGuess === secretNumber) {
+    document.querySelector(".message").innerHTML = "You don get am! Hurray 🥇";
+    document.querySelector(".message").style.backgroundColor = "green";
+  } else if (userGuess > 20) {
+    document.querySelector(".message").innerHTML =
+      " eye dey pain you? we say between 1 and 20";
+  } else if (userGuess > secretNumber) {
+    document.querySelector(".message").innerHTML = "guess too high";
+  } else if (userGuess < secretNumber) {
+    document.querySelector(".message").innerHTML = "guess too low";
+  }
+});
