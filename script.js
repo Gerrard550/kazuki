@@ -125,20 +125,32 @@ console.log(BMIMark > BMIJohn);
 // 2. Multiply array by 10
 // 3. Sum numbers from 1 to 5
 
-for (let a = 1; a <= 10; a++) {
-  console.log(a);
-}
+// for (let a = 1; a <= 10; a++) {
+//   console.log(a);
+// }
 
-const newNumbers = [2, 4, 6, 8, 10, 11, 12, 16, 30];
-for (let x = 0; x < newNumbers.length; x++) {
-  console.log(newNumbers[x] * 10);
-}
+// const newNumbers = [2, 4, 6, 8, 10, 11, 12, 16, 30];
+// for (let x = 0; x < newNumbers.length; x++) {
+//   console.log(newNumbers[x] * 10);
+// }
 
-let multiply = 1;
-for (let x = 1; x <= 10; x++) {
-  multiply = multiply * x;
-}
-console.log(multiply);
+// let multiply = 1;
+// for (let x = 1; x <= 10; x++) {
+//   multiply = multiply * x;
+// }
+// console.log(multiply);
+
+// let substract = 1;
+// for (let y = 1; y <= 5; y++) {
+//   substract = substract - y;
+// }
+// console.log(substract);
+
+// DOM document object model
+
+const secretNumber = Math.trunc(Math.random() * 20) + 1;
+document.querySelector(".check").addEventListener("click", () => {
+  const userGuess = Number(document.querySelector(".guess").value);
 
   if (!userGuess) {
     document.querySelector(".message").innerHTML =
