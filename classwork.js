@@ -104,3 +104,23 @@ console.log(shallowCopy);
 console.log(numArray);
 shallowCopy.shift();
 console.log(shallowCopy);
+
+const vowels = ["a", "e", "i"];
+const consonants = ["k", "l", "m"];
+const alpha = [...vowels, ...consonants];
+console.log(alpha);
+
+const shallowAlpha = [...alpha];
+console.log(shallowAlpha);
+
+function compareNumb(x, y) {
+  if (x > y) {
+    console.log(`${x} is greater than ${y}`);
+  } else if (x < y) {
+    console.log(`${x} is lesser than ${y}`);
+  } else {
+    console.log(`${x} equals to ${y}`);
+  }
+}
+
+compareNumb(20, 20);
