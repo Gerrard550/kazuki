@@ -53,3 +53,13 @@ function checkLeap(year) {
 }
 
 checkLeap(1995);
+
+function alphabet(character) {
+  if ((character === a, e, i, o, u)) {
+    console.log("character is vowel");
+  } else {
+    console.log("character is consonant");
+  }
+}
+
+character(a);
