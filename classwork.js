@@ -54,12 +54,53 @@ function checkLeap(year) {
 
 checkLeap(1995);
 
-function alphabet(character) {
-  if ((character === a, e, i, o, u)) {
-    console.log("character is vowel");
-  } else {
-    console.log("character is consonant");
-  }
-}
+// function alphabet(character) {
+//   if ((character === a, e, i, o, u)) {
+//     console.log("character is vowel");
+//   } else {
+//     console.log("character is consonant");
+//   }
+// }
 
-character(a);
+// character(a)
+
+//
+// ARRAY DESTRUCTURE
+
+const league = {
+  name: "English Premier League",
+  country: "England",
+  teams: [
+    "Manchester United",
+    "Manchester City",
+    "Liverpool",
+    "Arsenal",
+    "Chelsea",
+    "Tottenham Hotspur",
+    "Newcastle United",
+    "Aston Villa",
+    "West Ham United",
+    "Brighton & Hove Albion",
+  ],
+};
+console.log(league.name);
+console.log(league.country);
+const [firstTeam, , thirdTeam, ,] = league.teams;
+console.log(firstTeam, thirdTeam);
+
+const mydreamCountry = league.country;
+console.log(mydreamCountry);
+
+// SPREAD OPERATOR
+// Join two arrays and shallow copy
+const numArray = [5, 9, 8, 5, 3];
+const newArray = [2, 7, ...numArray];
+console.log(newArray);
+
+const shallowCopy = [...numArray];
+shallowCopy.push(25);
+
+console.log(shallowCopy);
+console.log(numArray);
+shallowCopy.shift();
+console.log(shallowCopy);
