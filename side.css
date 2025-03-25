@@ -1,0 +1,48 @@
+body {
+  background-color: mediumorchid;
+  font-family: "Oswald";
+}
+
+h1 {
+  text-align: center;
+}
+
+.bond img {
+  transition: transform 3s ease-out;
+}
+
+.bond img:hover {
+  opacity: 50%;
+  transform: translateX(400px);
+}
+
+.author {
+  color: #ffffff;
+  float: right;
+}
+
+.author img {
+  width: 400px;
+  height: 400px;
+  margin: 20px 20px;
+}
+
+.sidebar {
+  background-color: red;
+  width: 100px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: transform 3s ease-in-out;
+}
+
+.sidebar:hover {
+  background-color: springgreen;
+  transform: translateX(-400px);
+}
+
+.sidebar button {
+  position: absolute;
+  right: 0;
+}
