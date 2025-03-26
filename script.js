@@ -171,9 +171,31 @@ console.log(BMIMark > BMIJohn);
 const restaurant = {
   name: "Classico Italiano",
   location: "Visa Angelo Tavanti 23, Firenze, Italy",
-  categories: ["Focaccia", "Brushetta", "Garlic bread", "Caprese Salad"],
+  categories: [
+    "Focaccia",
+    "Brushetta",
+    "Garlic bread",
+    "Caprese Salad",
+    "Amala",
+  ],
   mainMenu: ["Pizza", "Pasta", "Risotto"],
 };
-console.log(restaurant.location);
-const myBestfood = restaurant.mainMenu;
-console.log(myBestfood);
+// console.log(restaurant.name);
+// const [firstMeal, , , , thirdMeal] = restaurant.categories;
+// console.log(firstMeal, thirdMeal);
+// const myBestfood = restaurant.mainMenu;
+// console.log(myBestfood);
+
+let [firstMeal, , thirdMeal] = restaurant.categories;
+console.log(firstMeal, thirdMeal);
+
+[firstMeal, thirdMeal] = [thirdMeal, firstMeal];
+console.log(firstMeal, thirdMeal);
+
+const nested = [2, 4, [7, 8]];
+// const [a, , b] = nested;
+const [a, , [b, c]] = nested;
+console.log(a, b, c);
+
+const newFood = [...restaurant.categories, "Garri", "Semo"];
+console.log(newFood);

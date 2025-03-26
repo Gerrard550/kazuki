@@ -67,60 +67,100 @@ checkLeap(1995);
 //
 // ARRAY DESTRUCTURE
 
-const league = {
-  name: "English Premier League",
-  country: "England",
-  teams: [
-    "Manchester United",
-    "Manchester City",
-    "Liverpool",
-    "Arsenal",
-    "Chelsea",
-    "Tottenham Hotspur",
-    "Newcastle United",
-    "Aston Villa",
-    "West Ham United",
-    "Brighton & Hove Albion",
-  ],
-};
-console.log(league.name);
-console.log(league.country);
-const [firstTeam, , thirdTeam, ,] = league.teams;
-console.log(firstTeam, thirdTeam);
+// const league = {
+//   name: "English Premier League",
+//   country: "England",
+//   teams: [
+//     "Manchester United",
+//     "Manchester City",
+//     "Liverpool",
+//     "Arsenal",
+//     "Chelsea",
+//     "Tottenham Hotspur",
+//     "Newcastle United",
+//     "Aston Villa",
+//     "West Ham United",
+//     "Brighton & Hove Albion",
+//   ],
+// };
+// console.log(league.name);
+// console.log(league.country);
+// const [firstTeam, , thirdTeam, ,] = league.teams;
+// console.log(firstTeam, thirdTeam);
 
-const mydreamCountry = league.country;
-console.log(mydreamCountry);
+// const mydreamCountry = league.country;
+// console.log(mydreamCountry);
 
-// SPREAD OPERATOR
-// Join two arrays and shallow copy
-const numArray = [5, 9, 8, 5, 3];
-const newArray = [2, 7, ...numArray];
-console.log(newArray);
+// // SPREAD OPERATOR
+// // Join two arrays and shallow copy
+// const numArray = [5, 9, 8, 5, 3];
+// const newArray = [2, 7, ...numArray];
+// console.log(newArray);
 
-const shallowCopy = [...numArray];
-shallowCopy.push(25);
+// const shallowCopy = [...numArray];
+// shallowCopy.push(25);
 
-console.log(shallowCopy);
-console.log(numArray);
-shallowCopy.shift();
-console.log(shallowCopy);
+// console.log(shallowCopy);
+// console.log(numArray);
+// shallowCopy.shift();
+// console.log(shallowCopy);
 
-const vowels = ["a", "e", "i"];
-const consonants = ["k", "l", "m"];
-const alpha = [...vowels, ...consonants];
-console.log(alpha);
+// const vowels = ["a", "e", "i"];
+// const consonants = ["k", "l", "m"];
+// const alpha = [...vowels, ...consonants];
+// console.log(alpha);
 
-const shallowAlpha = [...alpha];
-console.log(shallowAlpha);
+// const shallowAlpha = [...alpha];
+// console.log(shallowAlpha);
 
-function compareNumb(x, y) {
-  if (x > y) {
-    console.log(`${x} is greater than ${y}`);
-  } else if (x < y) {
-    console.log(`${x} is lesser than ${y}`);
-  } else {
-    console.log(`${x} equals to ${y}`);
+// function compareNumb(x, y) {
+//   if (x > y) {
+//     console.log(`${x} is greater than ${y}`);
+//   } else if (x < y) {
+//     console.log(`${x} is lesser than ${y}`);
+//   } else {
+//     console.log(`${x} equals to ${y}`);
+//   }
+// }
+
+// compareNumb(20, 20);
+
+// // QUESTIONS
+// 7.	What is JavaScript used for?
+// 8.	How do you declare a variable in JavaScript?
+// 9.	What is the difference between let, const, and var?
+// 10.	How do you write a function in JavaScript?
+// 11.	What is the difference between == and === in JavaScript?
+// 12.	What is an array in JavaScript? How do you create one?
+// 13.	How do you add and remove elements from an array?
+// 14.	What is the difference between null and undefined?
+// 15.	How do you check the data type of a variable in JavaScript?
+
+// console.log(a);
+let a = 22;
+let f = null;
+console.log(f);
+console.log(a);
+const b = 27;
+console.log(z);
+var z = 33;
+
+a = 33;
+console.log(a);
+
+function myCountry(x) {
+  if ((x = 0)) {
   }
 }
 
-compareNumb(20, 20);
+console.log("5" === 5);
+
+x = ["4", 6, 9, "Tbazz", null, undefined, true, false, [1, 2]];
+console.log(x);
+
+//SHORT CIRCUTING
+// || operator....it returns the first truthy value, or the last value if none is true
+
+console.log(undefined || null || NaN || 0 || "");
+
+//  && operator returns the first falsy value or the last value if all are true
