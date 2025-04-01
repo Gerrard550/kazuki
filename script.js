@@ -186,16 +186,46 @@ const restaurant = {
 // const myBestfood = restaurant.mainMenu;
 // console.log(myBestfood);
 
-let [firstMeal, , thirdMeal] = restaurant.categories;
-console.log(firstMeal, thirdMeal);
+// let [firstMeal, , thirdMeal] = restaurant.categories;
+// console.log(firstMeal, thirdMeal);
 
-[firstMeal, thirdMeal] = [thirdMeal, firstMeal];
-console.log(firstMeal, thirdMeal);
+// [firstMeal, thirdMeal] = [thirdMeal, firstMeal];
+// console.log(firstMeal, thirdMeal);
 
-const nested = [2, 4, [7, 8]];
-// const [a, , b] = nested;
-const [a, , [b, c]] = nested;
-console.log(a, b, c);
+// const nested = [2, 4, [7, 8]];
+// // const [a, , b] = nested;
+// const [a, , [b, c]] = nested;
+// console.log(a, b, c);
 
-const newFood = [...restaurant.categories, "Garri", "Semo"];
-console.log(newFood);
+// const newFood = [...restaurant.categories, "Garri", "Semo"];
+// console.log(newFood);
+
+// ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+
+// WHILE LOOP
+
+// let rep = 1;
+// while (rep < 11) {
+//   console.log(`done ${rep} number of times`);
+//   rep++;
+// }
+// // FOR-OF
+// const number = [2, 4, 6, 8, 10];
+// for (const gray of number) {
+//   console.log(gray * 10);
+// }
+
+const fruits = ["apple", "banana", "mango"];
+for (i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+// 1. Write a for loop that prints numbers from 1 to 20.
+
+// 2.Modify the for loop to print only even numbers from 2 to 10.
+
+// 3.Write a for loop that iterates through an array ["apple", "banana", "cherry"] and logs each fruit.
+
+// for (var num = 2; num < 10; num = num + 2) {
+//   console.log(num);
+// }

@@ -44,15 +44,15 @@
 // 5.	Write a program that determines whether a given character is a vowel or a consonant.
 // 6.	Write a program that converts a temperature from Celsius to Fahrenheit.
 
-function checkLeap(year) {
-  if (year % 4 === 0) {
-    console.log("year is a leap year");
-  } else if (year % 4 !== 0) {
-    console.log("year is not a leap year");
-  }
-}
+// function checkLeap(year) {
+//   if (year % 4 === 0) {
+//     console.log("year is a leap year");
+//   } else if (year % 4 !== 0) {
+//     console.log("year is not a leap year");
+//   }
+// }
 
-checkLeap(1995);
+// checkLeap(1995);
 
 // function alphabet(character) {
 //   if ((character === a, e, i, o, u)) {
@@ -137,30 +137,102 @@ checkLeap(1995);
 // 15.	How do you check the data type of a variable in JavaScript?
 
 // console.log(a);
-let a = 22;
-let f = null;
-console.log(f);
-console.log(a);
-const b = 27;
-console.log(z);
-var z = 33;
+// let a = 22;
+// let f = null;
+// console.log(f);
+// console.log(a);
+// const b = 27;
+// console.log(z);
+// var z = 33;
 
-a = 33;
-console.log(a);
+// a = 33;
+// console.log(a);
 
-function myCountry(x) {
-  if ((x = 0)) {
-  }
+// function myCountry(x) {
+//   if ((x = 0)) {
+//   }
+// }
+
+// console.log("5" === 5);
+
+// x = ["4", 6, 9, "Tbazz", null, undefined, true, false, [1, 2]];
+// console.log(x);
+
+// //SHORT CIRCUTING
+// // || operator....it returns the first truthy value, or the last value if none is true
+
+// console.log(undefined || null || NaN || 0 || "");
+
+// //  && operator returns the first falsy value or the last value if all are true
+
+// const eplTeams = [
+//   "Arsenal",
+//   "Aston Villa",
+//   "Bournemouth",
+//   "Brentford",
+//   "Brighton & Hove Albion",
+//   "Burnley",
+//   "Chelsea",
+//   "Crystal Palace",
+//   "Everton",
+//   "Fulham",
+//   "Liverpool",
+//   "Luton Town",
+//   "Manchester City",
+//   "Manchester United",
+//   "Newcastle United",
+//   "Nottingham Forest",
+//   "Sheffield United",
+//   "Tottenham Hotspur",
+//   "West Ham United",
+// ];
+
+// for (const num of eplTeams.entries()) {
+//   console.log(`Position ${num[0] + 1} is ${num[1]}`);
+// }
+
+// const checkClass = (arm) => {
+//   const individualClass = arm.slice(-1);
+//   if (individualClass === "a" || individualClass === "b") {
+//     console.log("na science class");
+//   } else if (individualClass === "c" || individualClass === "d") {
+//     console.log("Na commercial student");
+//   } else if (individualClass === "e" || individualClass === "f") {
+//     console.log("na Arts students");
+//   } else {
+//     console.log("na mechanic");
+//   }
+// };
+// checkClass("5b");
+// checkClass("5c");
+// checkClass("5e");
+// checkClass("5p");
+
+// const checkCountry = (check) => {
+//   const nationality = check.slice(-2);
+//   if (nationality === "ng") {
+//     console.log("Is a Nigerian");
+//   } else if (nationality === "gh") {
+//     console.log("Is a Ghanian");
+//   } else if (nationality === "us") {
+//     console.log("Is an American");
+//   } else {
+//     console.log("Is an Ijebu");
+//   }
+// };
+
+// checkCountry("2563ng");
+// checkCountry("2563gh");
+// checkCountry("2563us");
+// checkCountry("2563pp");
+
+function checkInput(myState) {
+  const realState = myState.trim().toLowerCase();
+  return (
+    realState[0].toUpperCase() +
+    realState.slice(1, -1) +
+    realState[myState.length - 1].toUpperCase()
+  );
 }
 
-console.log("5" === 5);
-
-x = ["4", 6, 9, "Tbazz", null, undefined, true, false, [1, 2]];
-console.log(x);
-
-//SHORT CIRCUTING
-// || operator....it returns the first truthy value, or the last value if none is true
-
-console.log(undefined || null || NaN || 0 || "");
-
-//  && operator returns the first falsy value or the last value if all are true
+console.log(checkInput("lagos"));
