@@ -347,7 +347,7 @@
 //   console.log(`${brief[0] + 1}th state is ${brief[1]}`);
 // }
 
-const numbers = [3, 5, 7, 9];
+const numbers = [3, 5, 7, 9, 13, 15];
 const doubleNum = numbers.map((w) => {
   return w * 2;
 });
@@ -358,3 +358,29 @@ const greaterNum = numbers.filter((q) => {
   return q > 3 && q < 9;
 });
 console.log(greaterNum);
+
+const multiplyNum = numbers.reduce((b, c) => {
+  return b * c;
+}, 1);
+
+console.log(multiplyNum);
+
+const newNum = [1, 2, 3, 4, 5];
+let doubleNewnum = newNum.map((a) => {
+  return a * 2;
+});
+
+doubleNewnum = doubleNewnum.filter((x) => {
+  return x < 8;
+});
+
+doubleNewnum = doubleNewnum.reduce((c, d) => {
+  return c + d;
+}, 0);
+console.log(doubleNewnum);
+
+const output = newNum
+  .map((x) => x * 2)
+  .filter((x) => x < 8)
+  .reduce((a, b) => a + b, 0);
+console.log(output);
