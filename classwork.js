@@ -226,123 +226,135 @@
 // checkCountry("2563us");
 // checkCountry("2563pp");
 
-function checkInput(myState) {
-  const realState = myState.trim().toLowerCase();
-  return (
-    realState[0].toUpperCase() +
-    realState.slice(1, -1) +
-    realState[myState.length - 1].toUpperCase()
-  );
-}
-
-console.log(checkInput("lagos"));
-
-const usaStates = [
-  "Alabama",
-
-  "Alaska",
-
-  "Arizona",
-
-  "Arkansas",
-
-  "California",
-
-  "Colorado",
-
-  "Connecticut",
-
-  "Delaware",
-
-  "Florida",
-
-  "Georgia",
-
-  "Hawaii",
-
-  "Idaho",
-
-  "Illinois",
-
-  "Indiana",
-
-  "Iowa",
-
-  "Kansas",
-
-  "Kentucky",
-
-  "Louisiana",
-
-  "Maine",
-
-  "Maryland",
-
-  "Massachusetts",
-
-  "Michigan",
-
-  "Minnesota",
-
-  "Mississippi",
-
-  "Missouri",
-
-  "Montana",
-
-  "Nebraska",
-
-  "Nevada",
-
-  "New Hampshire",
-
-  "New Jersey",
-
-  "New Mexico",
-
-  "New York",
-
-  "North Carolina",
-
-  "North Dakota",
-
-  "Ohio",
-
-  "Oklahoma",
-
-  "Oregon",
-
-  "Pennsylvania",
-
-  "Rhode Island",
-
-  "South Carolina",
-
-  "South Dakota",
-
-  "Tennessee",
-
-  "Texas",
-
-  "Utah",
-
-  "Vermont",
-
-  "Virginia",
-
-  "Washington",
-
-  "West Virginia",
-
-  "Wisconsin",
-
-  "Wyoming",
-];
-
-// for (const num of usaStates.entries()) {
-//   console.log(`Position ${num[0] + 1} is ${num[1]}`);
+// function checkInput(myState) {
+//   const realState = myState.trim().toLowerCase();
+//   return (
+//     realState[0].toUpperCase() +
+//     realState.slice(1, -1) +
+//     realState[myState.length - 1].toUpperCase()
+//   );
 // }
 
-for (const brief of usaStates.entries()) {
-  console.log(`${brief[0] + 1}th state is ${brief[1]}`);
-}
+// console.log(checkInput("lagos"));
+
+// const usaStates = [
+//   "Alabama",
+
+//   "Alaska",
+
+//   "Arizona",
+
+//   "Arkansas",
+
+//   "California",
+
+//   "Colorado",
+
+//   "Connecticut",
+
+//   "Delaware",
+
+//   "Florida",
+
+//   "Georgia",
+
+//   "Hawaii",
+
+//   "Idaho",
+
+//   "Illinois",
+
+//   "Indiana",
+
+//   "Iowa",
+
+//   "Kansas",
+
+//   "Kentucky",
+
+//   "Louisiana",
+
+//   "Maine",
+
+//   "Maryland",
+
+//   "Massachusetts",
+
+//   "Michigan",
+
+//   "Minnesota",
+
+//   "Mississippi",
+
+//   "Missouri",
+
+//   "Montana",
+
+//   "Nebraska",
+
+//   "Nevada",
+
+//   "New Hampshire",
+
+//   "New Jersey",
+
+//   "New Mexico",
+
+//   "New York",
+
+//   "North Carolina",
+
+//   "North Dakota",
+
+//   "Ohio",
+
+//   "Oklahoma",
+
+//   "Oregon",
+
+//   "Pennsylvania",
+
+//   "Rhode Island",
+
+//   "South Carolina",
+
+//   "South Dakota",
+
+//   "Tennessee",
+
+//   "Texas",
+
+//   "Utah",
+
+//   "Vermont",
+
+//   "Virginia",
+
+//   "Washington",
+
+//   "West Virginia",
+
+//   "Wisconsin",
+
+//   "Wyoming",
+// ];
+
+// // for (const num of usaStates.entries()) {
+// //   console.log(`Position ${num[0] + 1} is ${num[1]}`);
+// // }
+
+// for (const brief of usaStates.entries()) {
+//   console.log(`${brief[0] + 1}th state is ${brief[1]}`);
+// }
+
+const numbers = [3, 5, 7, 9];
+const doubleNum = numbers.map((w) => {
+  return w * 2;
+});
+console.log(numbers);
+console.log(doubleNum);
+
+const greaterNum = numbers.filter((q) => {
+  return q > 3 && q < 9;
+});
+console.log(greaterNum);
