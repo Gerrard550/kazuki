@@ -488,4 +488,22 @@ function purchaseDiscount(amount) {
 purchaseDiscount(150);
 purchaseDiscount(65);
 purchaseDiscount(10);
+console.log(" ");
 // 6. Write a simple number guessing function. Provide a secret number and a guess. Based on those numbers give players clues if their guess is higher, lower or correct.
+
+function numbCheck(secretNum, guessNum) {
+  if (secretNum > guessNum) {
+    console.log("guess is lower");
+  } else if (guessNum > secretNum) {
+    console.log("guess is higher");
+  } else if (secretNum === guessNum) {
+    console.log("guess is correct");
+  } else {
+    console.log("invalid guess");
+  }
+}
+
+numbCheck(2, 9);
+numbCheck(9, 2);
+numbCheck(5, 5);
+numbCheck(10);
