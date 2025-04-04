@@ -347,40 +347,145 @@
 //   console.log(`${brief[0] + 1}th state is ${brief[1]}`);
 // }
 
-const numbers = [3, 5, 7, 9, 13, 15];
-const doubleNum = numbers.map((w) => {
-  return w * 2;
-});
-console.log(numbers);
-console.log(doubleNum);
+// const numbers = [3, 5, 7, 9, 13, 15];
+// const doubleNum = numbers.map((w) => {
+//   return w * 2;
+// });
+// console.log(numbers);
+// console.log(doubleNum);
 
-const greaterNum = numbers.filter((q) => {
-  return q > 3 && q < 9;
-});
-console.log(greaterNum);
+// const greaterNum = numbers.filter((q) => {
+//   return q > 3 && q < 9;
+// });
+// console.log(greaterNum);
 
-const multiplyNum = numbers.reduce((b, c) => {
-  return b * c;
-}, 1);
+// const multiplyNum = numbers.reduce((b, c) => {
+//   return b * c;
+// }, 1);
 
-console.log(multiplyNum);
+// console.log(multiplyNum);
 
-const newNum = [1, 2, 3, 4, 5];
-let doubleNewnum = newNum.map((a) => {
-  return a * 2;
-});
+// const newNum = [1, 2, 3, 4, 5];
+// let doubleNewnum = newNum.map((a) => {
+//   return a * 2;
+// });
 
-doubleNewnum = doubleNewnum.filter((x) => {
-  return x < 8;
-});
+// doubleNewnum = doubleNewnum.filter((x) => {
+//   return x < 8;
+// });
 
-doubleNewnum = doubleNewnum.reduce((c, d) => {
-  return c + d;
-}, 0);
-console.log(doubleNewnum);
+// doubleNewnum = doubleNewnum.reduce((c, d) => {
+//   return c + d;
+// }, 0);
+// console.log(doubleNewnum);
 
-const output = newNum
-  .map((x) => x * 2)
-  .filter((x) => x < 8)
-  .reduce((a, b) => a + b, 0);
-console.log(output);
+// const output = newNum
+//   .map((x) => x * 2)
+//   .filter((x) => x < 8)
+//   .reduce((a, b) => a + b, 0);
+// console.log(output);
+
+console.log(
+  "1. Write a function that determines whether a given number is positive or negative."
+);
+
+function detNumber(x) {
+  if (x > 0) {
+    console.log(`${x} is a positive number`);
+  } else if (x < 0) {
+    console.log(`${x} is a negative number`);
+  } else {
+    console.log("number is 0");
+  }
+}
+detNumber(22);
+detNumber(12);
+detNumber(1);
+detNumber(0);
+detNumber(-1);
+detNumber(-20);
+console.log(" ");
+
+console.log("2. Write a function that checks if a number is even or odd.");
+
+function checkNum(y) {
+  if (y === 0) {
+    console.log("number is 0");
+  } else if (y % 2 === 0) {
+    console.log(`${y} is Even`);
+  } else if (y % 2 !== 0) {
+    console.log(`${y} is Odd`);
+  }
+}
+checkNum(7);
+checkNum(9);
+checkNum(22);
+checkNum(2);
+checkNum(0);
+
+console.log(" ");
+
+console.log(
+  "3. ⁠Write a function that transforms a numerical grade to a letter grade (e.g grade 10 should display “A”)."
+);
+
+function transNumerical(grade) {
+  if (grade >= 70 && grade < 100) {
+    console.log(`Grade is A = ${grade}`);
+  } else if (grade >= 60 && grade <= 69) {
+    console.log(`Grade is B = ${grade}`);
+  } else if (grade >= 50 && grade <= 59) {
+    console.log(`Grade is C = ${grade} `);
+  } else if (grade >= 45 && grade <= 49) {
+    console.log(`Grade is D = ${grade}`);
+  } else if (grade >= 40 && grade <= 44) {
+    console.log(`Grade is E= ${grade}`);
+  } else {
+    console.log(`Grade ${grade} will repeat class`);
+  }
+}
+transNumerical(80);
+transNumerical(60);
+transNumerical(50);
+transNumerical(46);
+transNumerical(42);
+transNumerical(20);
+
+console.log(" ");
+// 4. Write a function that calculates the ticket price based on age with the following conditions: age below 12 pay a ticket price of 5, age below 18 pay a ticket price of 10, age below 60 pay a ticket price of 20, age over 60 play a ticket price of 15.
+
+function priceTickets(ageGroup) {
+  if (ageGroup <= 12) {
+    console.log(`Age ${ageGroup} pays a ticket price if 5`);
+  } else if (ageGroup <= 18) {
+    console.log(`Age ${ageGroup} pays a ticket price of 10`);
+  } else if (ageGroup <= 60) {
+    console.log(`Age ${ageGroup} pays a ticket price of 15`);
+  } else {
+    console.log(`Age ${ageGroup} pays nothing`);
+  }
+}
+
+priceTickets(6);
+priceTickets(15);
+priceTickets(59);
+priceTickets(75);
+
+console.log(" ");
+
+// 5. Write a function that calculates a discount based on the purchase amount.Prices equal or over 100 discount have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0
+
+function purchaseDiscount(amount) {
+  if (amount >= 100) {
+    console.log(`Prices ${amount} have a discount of 20`);
+  } else if (amount >= 50) {
+    console.log(`Prices ${amount} have a discount of 10`);
+  } else {
+    console.log("Prices have no discount");
+  }
+}
+
+purchaseDiscount(150);
+purchaseDiscount(65);
+purchaseDiscount(10);
+// 6. Write a simple number guessing function. Provide a secret number and a guess. Based on those numbers give players clues if their guess is higher, lower or correct.
