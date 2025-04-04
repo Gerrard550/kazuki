@@ -505,5 +505,5 @@ function numbCheck(secretNum, guessNum) {
 
 numbCheck(2, 9);
 numbCheck(9, 2);
-numbCheck(5, 5);
+numbCheck(9, 9, 5);
 numbCheck(10);
