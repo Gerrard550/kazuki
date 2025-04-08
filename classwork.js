@@ -385,126 +385,171 @@
 //   .reduce((a, b) => a + b, 0);
 // console.log(output);
 
-console.log(
-  "1. Write a function that determines whether a given number is positive or negative."
-);
+// console.log(
+//   "1. Write a function that determines whether a given number is positive or negative."
+// );
 
-function detNumber(x) {
-  if (x > 0) {
-    console.log(`${x} is a positive number`);
-  } else if (x < 0) {
-    console.log(`${x} is a negative number`);
-  } else {
-    console.log("number is 0");
-  }
+// function detNumber(x) {
+//   if (x > 0) {
+//     console.log(`${x} is a positive number`);
+//   } else if (x < 0) {
+//     console.log(`${x} is a negative number`);
+//   } else {
+//     console.log("number is 0");
+//   }
+// }
+// detNumber(22);
+// detNumber(12);
+// detNumber(1);
+// detNumber(0);
+// detNumber(-1);
+// detNumber(-20);
+// console.log(" ");
+
+// console.log("2. Write a function that checks if a number is even or odd.");
+
+// function checkNum(y) {
+//   if (y === 0) {
+//     console.log("number is 0");
+//   } else if (y % 2 === 0) {
+//     console.log(`${y} is Even`);
+//   } else if (y % 2 !== 0) {
+//     console.log(`${y} is Odd`);
+//   }
+// }
+// checkNum(7);
+// checkNum(9);
+// checkNum(22);
+// checkNum(2);
+// checkNum(0);
+
+// console.log(" ");
+
+// console.log(
+//   "3. ⁠Write a function that transforms a numerical grade to a letter grade (e.g grade 10 should display “A”)."
+// );
+
+// function transNumerical(grade) {
+//   if (grade >= 70 && grade <= 100) {
+//     console.log(`Grade is A = ${grade}`);
+//   } else if (grade >= 60 && grade <= 69) {
+//     console.log(`Grade is B = ${grade}`);
+//   } else if (grade >= 50 && grade <= 59) {
+//     console.log(`Grade is C = ${grade} `);
+//   } else if (grade >= 45 && grade <= 49) {
+//     console.log(`Grade is D = ${grade}`);
+//   } else if (grade >= 40 && grade <= 44) {
+//     console.log(`Grade is E= ${grade}`);
+//   } else {
+//     console.log(`Grade ${grade} will repeat class`);
+//   }
+// }
+// transNumerical(80);
+// transNumerical(60);
+// transNumerical(50);
+// transNumerical(46);
+// transNumerical(42);
+// transNumerical(20);
+// console.log("check in for answer");
+// transNumerical(100);
+
+// console.log(" ");
+// // 4. Write a function that calculates the ticket price based on age with the following conditions: age below 12 pay a ticket price of 5, age below 18 pay a ticket price of 10, age below 60 pay a ticket price of 20, age over 60 play a ticket price of 15.
+
+// function priceTickets(ageGroup) {
+//   if (ageGroup < 12) {
+//     console.log(`Age ${ageGroup} pays a ticket price if 5`);
+//   } else if (ageGroup >= 12 && ageGroup <= 17) {
+//     console.log(`Age ${ageGroup} pays a ticket price of 10`);
+//   } else if (ageGroup <= 60) {
+//     console.log(`Age ${ageGroup} pays a ticket price of 15`);
+//   } else {
+//     console.log(`Age ${ageGroup} pays nothing`);
+//   }
+// }
+
+// priceTickets(6);
+// priceTickets(15);
+// priceTickets(59);
+// priceTickets(75);
+
+// console.log(" ");
+
+// // 5. Write a function that calculates a discount based on the purchase amount.Prices equal or over 100 discount have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0
+
+// function purchaseDiscount(amount) {
+//   if (amount >= 100) {
+//     console.log(`Prices ${amount} have a discount of 20`);
+//   } else if (amount >= 50) {
+//     console.log(`Prices ${amount} have a discount of 10`);
+//   } else {
+//     console.log("Prices have no discount");
+//   }
+// }
+
+// purchaseDiscount(150);
+// purchaseDiscount(65);
+// purchaseDiscount(10);
+// console.log(" ");
+// // 6. Write a simple number guessing function. Provide a secret number and a guess. Based on those numbers give players clues if their guess is higher, lower or correct.
+
+// function numbCheck(secretNum, guessNum) {
+//   if (secretNum > guessNum) {
+//     console.log("guess is lower");
+//   } else if (guessNum > secretNum) {
+//     console.log("guess is higher");
+//   } else if (secretNum === guessNum) {
+//     console.log("guess is correct");
+//   } else {
+//     console.log("invalid guess");
+//   }
+// }
+
+// numbCheck(2, 9);
+// numbCheck(9, 2);
+// numbCheck(9, 9);
+// numbCheck(10);
+// numbCheck(4, 4);
+
+// function one(callBack) {
+//   console.log("I am okay");
+//   callBack();
+// }
+
+// function two() {
+//   console.log("All the time");
+// }
+
+// one(two);
+
+// function three(mine) {
+//   console.log("Yes I am good");
+//   mine();
+// }
+
+// function four() {
+//   console.log("No I am not fine");
+// }
+
+// three(four);
+
+// Poundo Factory
+
+function sliceYam(callBack) {
+  console.log("Cutting yam");
+  callBack();
 }
-detNumber(22);
-detNumber(12);
-detNumber(1);
-detNumber(0);
-detNumber(-1);
-detNumber(-20);
-console.log(" ");
 
-console.log("2. Write a function that checks if a number is even or odd.");
-
-function checkNum(y) {
-  if (y === 0) {
-    console.log("number is 0");
-  } else if (y % 2 === 0) {
-    console.log(`${y} is Even`);
-  } else if (y % 2 !== 0) {
-    console.log(`${y} is Odd`);
-  }
-}
-checkNum(7);
-checkNum(9);
-checkNum(22);
-checkNum(2);
-checkNum(0);
-
-console.log(" ");
-
-console.log(
-  "3. ⁠Write a function that transforms a numerical grade to a letter grade (e.g grade 10 should display “A”)."
-);
-
-function transNumerical(grade) {
-  if (grade >= 70 && grade < 100) {
-    console.log(`Grade is A = ${grade}`);
-  } else if (grade >= 60 && grade <= 69) {
-    console.log(`Grade is B = ${grade}`);
-  } else if (grade >= 50 && grade <= 59) {
-    console.log(`Grade is C = ${grade} `);
-  } else if (grade >= 45 && grade <= 49) {
-    console.log(`Grade is D = ${grade}`);
-  } else if (grade >= 40 && grade <= 44) {
-    console.log(`Grade is E= ${grade}`);
-  } else {
-    console.log(`Grade ${grade} will repeat class`);
-  }
-}
-transNumerical(80);
-transNumerical(60);
-transNumerical(50);
-transNumerical(46);
-transNumerical(42);
-transNumerical(20);
-
-console.log(" ");
-// 4. Write a function that calculates the ticket price based on age with the following conditions: age below 12 pay a ticket price of 5, age below 18 pay a ticket price of 10, age below 60 pay a ticket price of 20, age over 60 play a ticket price of 15.
-
-function priceTickets(ageGroup) {
-  if (ageGroup <= 12) {
-    console.log(`Age ${ageGroup} pays a ticket price if 5`);
-  } else if (ageGroup <= 18) {
-    console.log(`Age ${ageGroup} pays a ticket price of 10`);
-  } else if (ageGroup <= 60) {
-    console.log(`Age ${ageGroup} pays a ticket price of 15`);
-  } else {
-    console.log(`Age ${ageGroup} pays nothing`);
-  }
+function boilYam() {
+  console.log("Boiling Yam");
 }
 
-priceTickets(6);
-priceTickets(15);
-priceTickets(59);
-priceTickets(75);
-
-console.log(" ");
-
-// 5. Write a function that calculates a discount based on the purchase amount.Prices equal or over 100 discount have a discount of 20. Prices equal or over 50 have a discount of 10. Otherwise discount is 0
-
-function purchaseDiscount(amount) {
-  if (amount >= 100) {
-    console.log(`Prices ${amount} have a discount of 20`);
-  } else if (amount >= 50) {
-    console.log(`Prices ${amount} have a discount of 10`);
-  } else {
-    console.log("Prices have no discount");
-  }
+function poundYam() {
+  console.log("Pounding Yam");
 }
 
-purchaseDiscount(150);
-purchaseDiscount(65);
-purchaseDiscount(10);
-console.log(" ");
-// 6. Write a simple number guessing function. Provide a secret number and a guess. Based on those numbers give players clues if their guess is higher, lower or correct.
-
-function numbCheck(secretNum, guessNum) {
-  if (secretNum > guessNum) {
-    console.log("guess is lower");
-  } else if (guessNum > secretNum) {
-    console.log("guess is higher");
-  } else if (secretNum === guessNum) {
-    console.log("guess is correct");
-  } else {
-    console.log("invalid guess");
-  }
+function wrapYam() {
+  console.log("Poundo is ready");
 }
 
-numbCheck(2, 9);
-numbCheck(9, 2);
-numbCheck(9, 9);
-numbCheck(10);
-numbCheck(4, 4);
+sliceYam(boilYam);
