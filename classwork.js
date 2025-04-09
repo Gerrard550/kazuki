@@ -552,28 +552,28 @@
 
 // Poundo Factory
 
-// function sliceYam(a) {
-//   console.log("Cutting yam");
-//   a();
-// }
+function sliceYam(a) {
+  console.log("Cutting yam");
+  a();
+}
 
-// function boilYam(b) {
-//   console.log("Boiling Yam");
-//   b();
-// }
+function boilYam(b) {
+  console.log("Boiling Yam");
+  b();
+}
 
-// function poundYam(c) {
-//   console.log("Pounding Yam");
-//   c();
-// }
+function poundYam(c) {
+  console.log("Pounding Yam");
+  c();
+}
 
-// function wrapYam() {
-//   setTimeout(() => {
-//     console.log("Poundo is ready");
-//   }, 3000);
-// }
+function wrapYam() {
+  setTimeout(() => {
+    console.log("Poundo is ready");
+  }, 3000);
+}
 
-// sliceYam(() => boilYam(() => poundYam(wrapYam)));
+sliceYam(() => boilYam(() => poundYam(wrapYam)));
 
 function marryWife(getmarried) {
   console.log("Find a BRIDE");
