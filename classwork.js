@@ -487,6 +487,23 @@
 //   }
 // }
 
+// function discountamount(amount) {
+//   if (amount >= 100) {
+//     let discount = amount - 20;
+//     console.log(`Discount is 20, so he's to pay ${discount}`);
+//   } else if (amount >= 50) {
+//     let discount = amount - 10;
+//     console.log(`Discount is 10, so he's to pay ${discount}`);
+//   } else {
+//     console.log(`Discount is 0, so he pay no ${amount}`);
+//   }
+// }
+
+// discountamount(150);
+// discountamount(130);
+// discountamount(70);
+// discountamount(40);
+
 // purchaseDiscount(150);
 // purchaseDiscount(65);
 // purchaseDiscount(10);
@@ -535,21 +552,47 @@
 
 // Poundo Factory
 
-function sliceYam(callBack) {
-  console.log("Cutting yam");
-  callBack();
+// function sliceYam(a) {
+//   console.log("Cutting yam");
+//   a();
+// }
+
+// function boilYam(b) {
+//   console.log("Boiling Yam");
+//   b();
+// }
+
+// function poundYam(c) {
+//   console.log("Pounding Yam");
+//   c();
+// }
+
+// function wrapYam() {
+//   setTimeout(() => {
+//     console.log("Poundo is ready");
+//   }, 3000);
+// }
+
+// sliceYam(() => boilYam(() => poundYam(wrapYam)));
+
+function marryWife(getmarried) {
+  console.log("Find a BRIDE");
+  getmarried();
+}
+function haveKids(getbelle) {
+  console.log("Born twins");
+  getbelle();
 }
 
-function boilYam() {
-  console.log("Boiling Yam");
+function trainChildren(qualityEducation) {
+  console.log("Send them to good schools");
+  qualityEducation();
 }
 
-function poundYam() {
-  console.log("Pounding Yam");
+function successfulKids() {
+  setTimeout(() => {
+    console.log("Reap  the fruit of your labor");
+  }, 3000);
 }
 
-function wrapYam() {
-  console.log("Poundo is ready");
-}
-
-sliceYam(boilYam);
+marryWife(() => haveKids(() => trainChildren(successfulKids)));
