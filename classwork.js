@@ -552,47 +552,188 @@
 
 // Poundo Factory
 
-function sliceYam(a) {
-  console.log("Cutting yam");
-  a();
-}
+// function sliceYam(a) {
+//   console.log("Cutting yam");
+//   a();
+// }
 
-function boilYam(b) {
-  console.log("Boiling Yam");
-  b();
-}
+// function boilYam(b) {
+//   console.log("Boiling Yam");
+//   b();
+// }
 
-function poundYam(c) {
-  console.log("Pounding Yam");
-  c();
-}
+// function poundYam(c) {
+//   console.log("Pounding Yam");
+//   c();
+// }
 
-function wrapYam() {
+// function wrapYam() {
+//   setTimeout(() => {
+//     console.log("Poundo is ready");
+//   }, 3000);
+// }
+
+// sliceYam(() => boilYam(() => poundYam(wrapYam)));
+
+// function marryWife(getmarried) {
+//   console.log("Find a BRIDE");
+//   getmarried();
+// }
+// function haveKids(getbelle) {
+//   console.log("Born beautiful twins");
+//   getbelle();
+// }
+
+// function trainChildren(qualityEducation) {
+//   console.log("Send them to good schools");
+//   qualityEducation();
+// }
+
+// function successfulKids() {
+//   setTimeout(() => {
+//     console.log("Reap  the fruit of your labor");
+//   }, 3000);
+// }
+
+// marryWife(() => haveKids(() => trainChildren(successfulKids)));
+
+//ILE IYAN ELEWE
+
+// place order
+// prepare food
+//prepare soup
+//add stain
+//select drink
+//food on the way
+//enjoy meal
+
+// const menu = {
+//   food: ["yam", "semo"],
+//   soup: ["efo", "ila", "ewedu"],
+//   stain: ["goat meat", "brokoto", "assorted", "ponmo"],
+//   drink: ["water", "palm wine", "soft dink"],
+// };
+
+// function placeOrder(
+//   prepare_meal,
+//   food_select,
+//   soup_select,
+//   stain_select,
+//   drink_select
+// ) {
+//   setTimeout(() => {
+//     console.log(
+//       `You have decided to eat ${
+//         menu.food[food_select] === "yam" ? "pounded yam" : "semo"
+//       }`
+//     );
+//     prepare_meal(soup_select, stain_select, drink_select);
+//   }, 2000);
+// }
+
+// function prepareFood(soup_select, stain_select, drink_select) {
+//   setTimeout(() => {
+//     console.log("food bn prepared");
+//     setTimeout(() => {
+//       console.log(`your ${menu.soup[soup_select]} is bn prepared too`);
+//       setTimeout(() => {
+//         console.log(`you picked ${menu.stain[stain_select]} as accessory`);
+//         setTimeout(() => {
+//           console.log(`you picked ${menu.drink[drink_select]} as drink`);
+//           setTimeout(() => {
+//             console.log("Food almost ready");
+//             setTimeout(() => {
+//               console.log("Enjoy your meal");
+//             }, 1000);
+//           }, 1000);
+//         }, 2000);
+//       }, 2000);
+//     }, 2000);
+//   }, 1000);
+// }
+
+// placeOrder(prepareFood, 1, 1, 2, 0);
+
+// console.log("");
+
+// run a small cake company using callback hell.......... minimum of 8 steps, minimum of 6 menu items,all used in the hell.....to be submitted within 20hours
+// Goodluck
+
+// // Gerrards confectionaries
+// mixIngredients
+// cakeType
+// add flavor
+// add sweetner
+// add color
+// put inside oven
+// cake is ready
+
+const menuItems = {
+  recipe: ["flour", "eggs", "butter"],
+  cakeType: ["Red velvet", "Cheese Cake", "Coconut cake"],
+  events: ["birthday", "wedding", "Anniversary"],
+  flavor: ["strawverry", "vanilla", "chocolate", "Banana"],
+  sweetner: ["Icing", "Honey", "sugar"],
+  color: ["white", "Red", "Yellow", "Brown"],
+};
+
+function mixIngredients(
+  addRecipe,
+  cakeType_select,
+  events_select,
+  flavor_select,
+  sweetner_select,
+  color_select
+) {
   setTimeout(() => {
-    console.log("Poundo is ready");
-  }, 3000);
+    console.log(`We are making a ${menuItems.cakeType[cakeType_select]} cake`);
+    addRecipe(
+      cakeType_select,
+      events_select,
+      flavor_select,
+      sweetner_select,
+      color_select
+    );
+  }, 2000);
 }
 
-sliceYam(() => boilYam(() => poundYam(wrapYam)));
-
-function marryWife(getmarried) {
-  console.log("Find a BRIDE");
-  getmarried();
-}
-function haveKids(getbelle) {
-  console.log("Born twins");
-  getbelle();
-}
-
-function trainChildren(qualityEducation) {
-  console.log("Send them to good schools");
-  qualityEducation();
-}
-
-function successfulKids() {
+function bakeCake(
+  cakeType_select,
+  events_select,
+  flavor_select,
+  sweetner_select,
+  color_select
+) {
   setTimeout(() => {
-    console.log("Reap  the fruit of your labor");
-  }, 3000);
+    console.log(`Cake is being processed with ${menuItems.recipe}`);
+    setTimeout(() => {
+      console.log(
+        `Our beautiful cake is for Kazuki's upcoming ${menuItems.events[events_select]}`
+      );
+      setTimeout(() => {
+        console.log(
+          `The tasteful cake isS made of ${menuItems.flavor[flavor_select]} flavor`
+        );
+        setTimeout(() => {
+          console.log(
+            `A Zero sugar cake with just ${menuItems.sweetner[sweetner_select]} as sweetner`
+          );
+
+          setTimeout(() => {
+            console.log(`${menuItems.color[color_select]} color is added`);
+            setTimeout(() => {
+              console.log("Cake is being put inside an oven to bake");
+              setTimeout(() => {
+                console.log(
+                  "Hurray!!! Our beautiful and sumptous cake🎂 is ready to be served😋"
+                );
+              }, 5000);
+            }, 3000);
+          }, 2000);
+        }, 2000);
+      }, 2000);
+    }, 2000);
+  }, 2000);
 }
 
-marryWife(() => haveKids(() => trainChildren(successfulKids)));
+mixIngredients(bakeCake, 0, 0, 1, 1, 1);
