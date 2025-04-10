@@ -712,7 +712,7 @@ function bakeCake(
       );
       setTimeout(() => {
         console.log(
-          `The tasteful cake isS made of ${menuItems.flavor[flavor_select]} flavor`
+          `The tasteful cake is made of ${menuItems.flavor[flavor_select]} flavor`
         );
         setTimeout(() => {
           console.log(
@@ -725,7 +725,7 @@ function bakeCake(
               console.log("Cake is being put inside an oven to bake");
               setTimeout(() => {
                 console.log(
-                  "Hurray!!! Our beautiful and sumptous cake🎂 is ready to be served😋"
+                  "Hurray!!!🕺 Our beautiful and sumptous cake🎂 is ready to be served😋"
                 );
               }, 5000);
             }, 3000);
