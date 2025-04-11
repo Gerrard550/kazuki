@@ -229,3 +229,86 @@ for (i = 0; i < fruits.length; i++) {
 // for (var num = 2; num < 10; num = num + 2) {
 //   console.log(num);
 // }
+
+//menu items
+// Chocolate Cake​
+// Vanilla Cake​
+// Red Velvet Cake​
+// Lemon Drizzle Cake​
+// Carrot Cake​
+// Black Forest Cake
+
+//Receive Order
+//​Prepare Ingredients
+// Bake Cake​
+// Cool Cake​
+// Package Cake​
+// Deliver Cake
+// makePayMent
+//thank you for choosing us.
+
+const menu = {
+  cake: ["medium", "large"],
+  flavour: ["vanila", "orange"],
+  size: ["small", "biggi"],
+  design: ["froest", "catoon"],
+  coluor: ["red", "mixedColour"],
+  topping: ["icecream", "agbalomoTop"],
+};
+
+function receiveOder(
+  order,
+  select_large,
+  select_orange,
+  select_catoon,
+  select_red,
+  select_icecream
+) {
+  setTimeout(() => {
+    console.log("we recived your order");
+    order(
+      select_large,
+      select_orange,
+      select_catoon,
+      select_red,
+      select_icecream
+    );
+  }, 1000);
+}
+function prepareIngredient(
+  select_large,
+  select_orange,
+  select_catoon,
+  select_red,
+  select_icecream
+) {
+  setTimeout(() => {
+    console.log("ingredient available for use");
+    setTimeout(() => {
+      console.log(`we are preparing ${menu.cake[select_large]} cake`);
+      setTimeout(() => {
+        console.log(` baking  ${menu.flavour[select_orange]} flavour cake`);
+        setTimeout(() => {
+          console.log(
+            `we are making a ${menu.design[select_catoon]} design cake`
+          );
+          setTimeout(() => {
+            console.log(`with a  ${menu.coluor[select_red]}  fundant`);
+            setTimeout(() => {
+              console.log(
+                `also coming with  ${menu.topping[select_icecream]} topping.`
+              );
+              setTimeout(() => {
+                console.log("verifing payment");
+                setTimeout(() => {
+                  console.log("Thanks for your patronage");
+                }, 1000);
+              }, 1000);
+            }, 2000);
+          }, 2000);
+        }, 2000);
+      }, 2000);
+    }, 1000);
+  }, 1500);
+}
+receiveOder(prepareIngredient, 1, 1, 1, 0, 0, 0);

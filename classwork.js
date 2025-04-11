@@ -668,72 +668,156 @@
 // put inside oven
 // cake is ready
 
-const menuItems = {
-  recipe: ["flour", "eggs", "butter"],
-  cakeType: ["Red velvet", "Cheese Cake", "Coconut cake"],
-  events: ["birthday", "wedding", "Anniversary"],
-  flavor: ["strawverry", "vanilla", "chocolate", "Banana"],
-  sweetner: ["Icing", "Honey", "sugar"],
-  color: ["white", "Red", "Yellow", "Brown"],
+// const menuItems = {
+//   recipe: ["flour", "eggs", "butter"],
+//   cakeType: ["Red velvet", "Cheese Cake", "Coconut cake"],
+//   events: ["birthday", "wedding", "Anniversary"],
+//   flavor: ["strawverry", "vanilla", "chocolate", "Banana"],
+//   sweetner: ["Icing", "Honey", "sugar"],
+//   color: ["white", "Red", "Yellow", "Brown"],
+// };
+
+// function mixIngredients(
+//   addRecipe,
+//   cakeType_select,
+//   events_select,
+//   flavor_select,
+//   sweetner_select,
+//   color_select
+// ) {
+//   setTimeout(() => {
+//     console.log(`We are making a ${menuItems.cakeType[cakeType_select]} cake`);
+//     addRecipe(
+//       cakeType_select,
+//       events_select,
+//       flavor_select,
+//       sweetner_select,
+//       color_select
+//     );
+//   }, 2000);
+// }
+
+// function bakeCake(
+//   cakeType_select,
+//   events_select,
+//   flavor_select,
+//   sweetner_select,
+//   color_select
+// ) {
+//   setTimeout(() => {
+//     console.log(`Cake is being processed with ${menuItems.recipe}`);
+//     setTimeout(() => {
+//       console.log(
+//         `Our beautiful cake is for Kazuki's upcoming ${menuItems.events[events_select]}`
+//       );
+//       setTimeout(() => {
+//         console.log(
+//           `The tasteful cake is made of ${menuItems.flavor[flavor_select]} flavor`
+//         );
+//         setTimeout(() => {
+//           console.log(
+//             `A Zero sugar cake with just ${menuItems.sweetner[sweetner_select]} as sweetner`
+//           );
+
+//           setTimeout(() => {
+//             console.log(`${menuItems.color[color_select]} color is added`);
+//             setTimeout(() => {
+//               console.log("Cake is being put inside an oven to bake");
+//               setTimeout(() => {
+//                 console.log(
+//                   "Hurray!!!🕺 Our beautiful and sumptous cake🎂 is ready to be served😋"
+//                 );
+//               }, 5000);
+//             }, 3000);
+//           }, 2000);
+//         }, 2000);
+//       }, 2000);
+//     }, 2000);
+//   }, 2000);
+// }
+
+// mixIngredients(bakeCake, 0, 0, 1, 1, 1);
+
+const championsLeague = {
+  groupA: ["Real Madrid", "Monaco", "Lazio", "Chelsea"],
+  groupB: ["Liverpool", "Valencia", "Roma", "Ajax"],
+  groupC: ["Barcelona", "Arsenal", "Bayern Munich", "PSG"],
+  groupD: [
+    "Manchester United",
+    "Athletico Madrid",
+    "Bourussia Dortmund",
+    "PSV",
+  ],
 };
 
-function mixIngredients(
-  addRecipe,
-  cakeType_select,
-  events_select,
-  flavor_select,
-  sweetner_select,
-  color_select
+function round16(
+  team,
+  selectA,
+  selectB,
+  selectC,
+  selectD,
+  selectE,
+  selectF,
+  selectG,
+  selectH
 ) {
   setTimeout(() => {
-    console.log(`We are making a ${menuItems.cakeType[cakeType_select]} cake`);
-    addRecipe(
-      cakeType_select,
-      events_select,
-      flavor_select,
-      sweetner_select,
-      color_select
+    console.log("Top two winners will proceed to next round");
+
+    team(
+      selectA,
+      selectB,
+      selectC,
+      selectD,
+      selectE,
+      selectF,
+      selectG,
+      selectH
     );
-  }, 2000);
+  }, 3000);
 }
 
-function bakeCake(
-  cakeType_select,
-  events_select,
-  flavor_select,
-  sweetner_select,
-  color_select
+function quaterFinal(
+  selectA,
+  selectB,
+  selectC,
+  selectD,
+  selectE,
+  selectF,
+  selectG,
+  selectH
 ) {
   setTimeout(() => {
-    console.log(`Cake is being processed with ${menuItems.recipe}`);
+    console.log(
+      `${championsLeague.groupA[selectA]} and ${championsLeague.groupA[selectB]} both win the Group A`
+    );
+
     setTimeout(() => {
       console.log(
-        `Our beautiful cake is for Kazuki's upcoming ${menuItems.events[events_select]}`
+        `${championsLeague.groupB[selectC]} and ${championsLeague.groupB[selectD]} both win the Group B`
       );
       setTimeout(() => {
         console.log(
-          `The tasteful cake is made of ${menuItems.flavor[flavor_select]} flavor`
+          `${championsLeague.groupC[selectE]} and ${championsLeague.groupC[selectF]} both win the Group C`
         );
         setTimeout(() => {
           console.log(
-            `A Zero sugar cake with just ${menuItems.sweetner[sweetner_select]} as sweetner`
+            `${championsLeague.groupD[selectG]} and ${championsLeague.groupD[selectH]} both win the Group D`
           );
-
           setTimeout(() => {
-            console.log(`${menuItems.color[color_select]} color is added`);
+            console.log(
+              "Eight teams have secured their spots in the Quarter-Finals. Here are the upcoming fixtures:"
+            );
             setTimeout(() => {
-              console.log("Cake is being put inside an oven to bake");
-              setTimeout(() => {
-                console.log(
-                  "Hurray!!!🕺 Our beautiful and sumptous cake🎂 is ready to be served😋"
-                );
-              }, 5000);
+              console.log(
+                `${championsLeague.groupA[selectA]} vs ${championsLeague.groupC[selectF]}, ${championsLeague.groupB[selectD]} vs ${championsLeague.groupD[selectG]}, ${championsLeague.groupC[selectE]} vs ${championsLeague.groupD[selectH]} and ${championsLeague.groupB[selectC]} vs ${championsLeague.groupA[selectB]}`
+              );
             }, 3000);
-          }, 2000);
+          }, 5000);
         }, 2000);
       }, 2000);
     }, 2000);
   }, 2000);
 }
 
-mixIngredients(bakeCake, 0, 0, 1, 1, 1);
+round16(quaterFinal, 0, 1, 0, 3, 0, 2, 1, 2);
