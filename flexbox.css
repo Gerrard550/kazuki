@@ -8,17 +8,32 @@ body {
   font-family: Arial, sans-serif;
   background-color: rgb(218, 129, 129);
 }
+
+button {
+  background-color: rgb(0, 0, 0);
+
+  font-weight: bold;
+  font-size: 15px;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
-  flex-basis: 50px;
+
   height: 100dvh;
 }
 
 .container button {
   display: flex;
-  flex-basis: 250px;
+  align-items: center;
+  flex-direction: column;
+  flex-basis: 180px;
+  margin: 40px 20px;
 }
 
 .container a {
