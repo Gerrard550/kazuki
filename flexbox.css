@@ -10,10 +10,15 @@ body {
 }
 .container {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-basis: 50px;
   height: 100dvh;
+}
+
+.container button {
+  display: flex;
+  flex-basis: 250px;
 }
 
 .container a {
